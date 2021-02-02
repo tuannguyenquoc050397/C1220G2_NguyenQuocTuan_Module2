@@ -60,10 +60,10 @@ public class HienThi {
                     case 2:
                         for(byte i=0; i<5; i++){
                             for (byte j=0;j<5;j++) {
-                                if(j<(5-i)){
-                                    System.out.print(" *");
-                                }else{
+                                if(j<i){
                                     System.out.print("  ");
+                                }else{
+                                    System.out.print(" *");
                                 }
                             }
                             System.out.println("");
