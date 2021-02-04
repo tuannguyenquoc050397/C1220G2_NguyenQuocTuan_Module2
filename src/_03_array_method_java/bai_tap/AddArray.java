@@ -3,6 +3,7 @@ package _03_array_method_java.bai_tap;
 import java.util.Scanner;
 
 public class AddArray {
+
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         System.out.println("Enter size array1");

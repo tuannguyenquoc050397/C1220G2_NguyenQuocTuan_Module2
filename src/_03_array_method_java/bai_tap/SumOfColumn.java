@@ -21,7 +21,7 @@ public class SumOfColumn {
             for (byte j=0; j<col;j++){
                 System.out.print(matrix[i][j]+"  ");
             }
-            System.out.println("");
+            System.out.println();
         }
         System.out.println("Enter column");
         byte colValue=scanner.nextByte();

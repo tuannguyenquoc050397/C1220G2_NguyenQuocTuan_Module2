@@ -5,13 +5,15 @@ import java.util.Scanner;
 public class Min {
     public static int minValue(int[] array){
         int min;
+        int index=0;
         min=array[0];
         for(int i=1; i<array.length; i++){
             if (array[i]<min){
                 min=array[i];
+                index=i;
             }
         }
-        return min;
+        return index;
     }
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
@@ -30,7 +32,6 @@ public class Min {
             System.out.println("Enter element: "+ (i+1));
             array[i]=scanner.nextInt();
         }
-        System.out.print(array);
         System.out.println(minValue(array));
     }
 }
