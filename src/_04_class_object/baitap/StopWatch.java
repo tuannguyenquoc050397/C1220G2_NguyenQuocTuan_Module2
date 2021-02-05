@@ -9,9 +9,9 @@ public class StopWatch {
         Watch myWatch=new Watch();
         Instant start=myWatch.start();
         System.out.println("start time: "+start);
-
-        for (int i=0; i<100000; i++){
-
+        double arr[]=new double[10000];
+        for (int i=0; i<10000; i++){
+            arr[i]=Math.random();
         }
         Instant stop=myWatch.stop();
         System.out.println("stop time: "+stop);

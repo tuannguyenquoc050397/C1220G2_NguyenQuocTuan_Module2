@@ -2,7 +2,7 @@ package _04_class_object.baitap;
 
 import java.util.Scanner;
 
-public class Ex_QuadraticEquation {
+public class ExerciseOfQuadraticEquation {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         System.out.println("Enter a: ");
