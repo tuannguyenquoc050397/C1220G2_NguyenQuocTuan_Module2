@@ -1,4 +1,4 @@
-package _06_inheritance.baitap.LopPointVaLopMovablePoint;
+package _06_inheritance.baitap.lop_point_lop_movablepoint;
 
  class MovablePoint extends Point{
     private float xSpeed;

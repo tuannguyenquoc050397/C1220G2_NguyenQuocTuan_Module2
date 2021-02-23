@@ -1,8 +1,8 @@
-package _06_inheritance.baitap.LopCircleVaLopCydinder;
+package _06_inheritance.baitap.lop_circle_lop_cylinder;
 
 class Circle {
-    private double radius=1.0;
-    private String color="red";
+    private double radius = 1.0;
+    private String color = "red";
 
     public Circle() {
     }
@@ -28,13 +28,15 @@ class Circle {
         this.color = color;
     }
 
-    public double getArea(){
-        return Math.PI*radius*radius;
+    public double getArea() {
+        return Math.PI * radius * radius;
     }
-    public double getPerimeter(){
-        return 2*Math.PI*radius;
+
+    public double getPerimeter() {
+        return 2 * Math.PI * radius;
     }
-    public String display(){
-        return "A Circle with radius "+getRadius()+" and Area: "+getArea();
+
+    public String display() {
+        return "A Circle with radius " + getRadius() + " and Area: " + getArea();
     }
 }

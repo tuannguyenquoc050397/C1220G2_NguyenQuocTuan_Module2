@@ -1,4 +1,4 @@
-package _06_inheritance.baitap.LopPoint2DVaLopPoint3D;
+package _06_inheritance.baitap.lop_point2d_lop_point3d;
 
 class Point3D extends Point2D {
     private float z;
@@ -22,16 +22,19 @@ class Point3D extends Point2D {
     public void setZ(float z) {
         this.z = z;
     }
-    public float[] getXY(){
-        float arr2[]={super.getX(),super.getY(),this.z};
-        return arr2;
+
+    public float[] getXY() {
+        float arrXYZ[] = {super.getX(), super.getY(), this.z};
+        return arrXYZ;
     }
-    public void setXYZ(float x,float y, float z){
-        super.setXY(x,y);
-        this.z=z;
+
+    public void setXYZ(float x, float y, float z) {
+        super.setXY(x, y);
+        this.z = z;
     }
+
     @Override
-    public String toString(){
-        return "("+super.getX()+","+super.getY()+","+this.z+")";
+    public String toString() {
+        return "(" + super.getX() + "," + super.getY() + "," + this.z + ")";
     }
 }

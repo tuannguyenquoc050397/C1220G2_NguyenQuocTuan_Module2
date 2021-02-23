@@ -1,4 +1,4 @@
-package _06_inheritance.baitap.LopCircleVaLopCydinder;
+package _06_inheritance.baitap.lop_circle_lop_cylinder;
 
  class Cylinder extends Circle {
     private double height=5.0;

@@ -1,13 +1,13 @@
-package _06_inheritance.baitap.LopPoint2DVaLopPoint3D;
+package _06_inheritance.baitap.lop_point_lop_movablepoint;
 
- class Point2D {
+ class Point {
     private float x;
     private float y;
 
-    public Point2D() {
+    public Point() {
     }
 
-    public Point2D(float x, float y) {
+    public Point(float x, float y) {
         this.x = x;
         this.y = y;
     }

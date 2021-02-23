@@ -1,4 +1,4 @@
-package _06_inheritance.baitap.LopPoint2DVaLopPoint3D;
+package _06_inheritance.baitap.lop_point2d_lop_point3d;
 
 public class Test {
     public static void main(String[] args) {
