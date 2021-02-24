@@ -1,5 +1,4 @@
-package _08_cleancode_refactoring.baitap;
-import org.junit.Before;
+package _08_cleanCode_refactoring.baitap;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

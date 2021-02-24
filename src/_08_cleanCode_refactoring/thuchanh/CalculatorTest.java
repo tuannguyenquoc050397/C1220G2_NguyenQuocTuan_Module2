@@ -1,4 +1,4 @@
-package _08_cleancode_refactoring.thuchanh;
+package _08_cleanCode_refactoring.thuchanh;
 
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;

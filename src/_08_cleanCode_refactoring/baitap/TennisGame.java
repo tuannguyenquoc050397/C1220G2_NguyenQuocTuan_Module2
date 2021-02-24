@@ -1,4 +1,4 @@
-package _08_cleancode_refactoring.baitap;
+package _08_cleanCode_refactoring.baitap;
 
 public class TennisGame {
     public static String getNotification(String player1Name, String player2Name, int scoreOfPlayer1, int scoreOfPlayer2) {
@@ -28,14 +28,20 @@ public class TennisGame {
         } else {
             if (checkScore) {
                 int minusResult = scoreOfPlayer1 - scoreOfPlayer2;
-                if (minusResult == 1) notification = "Advantage player1";
-                else if (minusResult == -1) notification = "Advantage player2";
-                else if (minusResult >= 2) notification = "Win for player1";
-                else notification = "Win for player2";
+                if (minusResult == 1) {
+                    notification = "Advantage player1";
+                } else if (minusResult == -1) {
+                    notification = "Advantage player2";
+                } else if (minusResult >= 2) {
+                    notification = "Win for player1";
+                } else {
+                    notification = "Win for player2";
+                }
             } else {
                 for (int i = 1; i < 3; i++) {
-                    if (i == 1) tempScore = scoreOfPlayer1;
-                    else {
+                    if (i == 1) {
+                        tempScore = scoreOfPlayer1;
+                    } else {
                         notification += "-";
                         tempScore = scoreOfPlayer2;
                     }

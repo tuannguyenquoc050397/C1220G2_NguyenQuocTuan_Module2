@@ -1,4 +1,4 @@
-package _08_cleancode_refactoring.thuchanh;
+package _08_cleanCode_refactoring.thuchanh;
 
 public class Calculator {
     public static final char ADDITION = '+';
