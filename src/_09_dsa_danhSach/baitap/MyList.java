@@ -94,7 +94,11 @@ public class MyList<E> {
             if (element.equals(elements[i])) return i;
         return -1;
     }
-//    public E clone(){
+
+    public void setElements(int i, E element) {
+        this.elements[i] = element;
+    }
+    //    public E clone(){
 //        Object elementsClone[]=new Object[getLength()];
 //        for (int i=0; i<size; i++){
 //            elementsClone[i]=elements[i];

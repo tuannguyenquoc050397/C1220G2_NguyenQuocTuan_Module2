@@ -39,8 +39,9 @@ public class MyLinkedList {
         head.next = temp;
         numNodes++;
     }
-    public void addLast(Object data){
-        Node newNode=new Node(data);
+
+    public void addLast(Object data) {
+        Node newNode = new Node(data);
 
     }
 
