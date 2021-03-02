@@ -5,22 +5,22 @@ import java.util.Stack;
 
 public class BinaryToDecimalOptional {
     public static void main(String[] args) {
-        Stack<Integer> stackBinary=new Stack<Integer>();
+        Stack<Integer> stackBinary = new Stack<Integer>();
         System.out.println("Enter Number");
-        Scanner scanner= new Scanner(System.in);
-        int number=scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
         int divNumber;
-        boolean check=false;
+        boolean check = false;
         do {
-            divNumber=number%2;
-            number=number/2;
-            check=(number==0);
+            divNumber = number % 2;
+            number = number / 2;
+            check = (number == 0);
             stackBinary.add(divNumber);
-        }while (!check);
+        } while (!check);
         System.out.println(stackBinary.size());
-        String binary="";
-        while (!stackBinary.isEmpty()){
-            binary+=stackBinary.pop();
+        String binary = "";
+        while (!stackBinary.isEmpty()) {
+            binary += stackBinary.pop();
         }
         System.out.println(binary);
     }
