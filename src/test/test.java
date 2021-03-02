@@ -10,23 +10,23 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 public class test {
-    public static class MyObject implements Comparable<MyObject> {
-
-        private Date dateTime;
-
-        public Date getDateTime() {
-            return dateTime;
-        }
-
-        public void setDateTime(Date datetime) {
-            this.dateTime = datetime;
-        }
-
-        @Override
-        public int compareTo(MyObject o) {
-            return getDateTime().compareTo(o.getDateTime());
-        }
-    }
+//    public static class MyObject implements Comparable<MyObject> {
+//
+//        private Date dateTime;
+//
+//        public Date getDateTime() {
+//            return dateTime;
+//        }
+//
+//        public void setDateTime(Date datetime) {
+//            this.dateTime = datetime;
+//        }
+//
+//        @Override
+//        public int compareTo(MyObject o) {
+//            return getDateTime().compareTo(o.getDateTime());
+//        }
+//    }
 
     public static void main(String[] args) throws Exception {
 //        String date1="05/03/1997";
