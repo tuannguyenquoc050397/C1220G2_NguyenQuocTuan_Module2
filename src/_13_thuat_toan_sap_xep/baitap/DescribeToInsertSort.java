@@ -1,6 +1,6 @@
 package _13_thuat_toan_sap_xep.baitap;
 
-public class InsertSort {
+public class DescribeToInsertSort {
     public static void sort(int[] list) {
         for (int i = 1; i < list.length; i++) {
             int key = list[i];
@@ -29,6 +29,6 @@ public class InsertSort {
         int[] list = {3, 1, 4, 2, 11, 6, 23, 10, 78, 7, 8, 9, 100};
         System.out.println("------------");
         System.out.println(list[0]);
-        InsertSort.sort(list);
+        DescribeToInsertSort.sort(list);
     }
 }

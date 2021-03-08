@@ -9,7 +9,7 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.*;
 
-public class test {
+public class SapXepNamNuNS {
 //    public static class MyObject implements Comparable<MyObject> {
 //
 //        private Date dateTime;
@@ -45,7 +45,7 @@ public class test {
         queue.add(new Person("A","12/03/1997","Nu"));
         queue.add(new Person("A","20/03/1997","Nu"));
         queue.add(new Person("A","30/03/1997","Nam"));
-        Collections.sort(queue);
+        Collections.sort(queue); // sap xep ngay sinh;
        for (int i=0; i<queue.size(); i++){
            if(queue.get(i).getGender()=="Nam"){
                listMale.add(queue.get(i));

@@ -9,32 +9,35 @@ public class ProductManagerArrayList {
     public void add(Product product){
         listProduct.add(product);
     }
-    public Product delete(int id){
+    public boolean delete(int id){
         for(int i=0; i<listProduct.size(); i++){
             if(listProduct.get(i).getId()==id){
-                return listProduct.remove(i);
+                return true;
             }
         }
-        return null;
+        return false;
     }
-    public Product edit(int id, Product product){
+    public boolean edit(int id, Product product){
         for(int i=0; i<listProduct.size(); i++){
             if(listProduct.get(i).getId()==id){
                 listProduct.get(i).setId(product.getId());
                 listProduct.get(i).setNameOfProduct(product.getNameOfProduct());
                 listProduct.get(i).setProductCost(product.getProductCost());
-                return listProduct.get(i);
+                return true;
             }
         }
-        return null;
+        return false;
     }
-    public Product search(String nameProduct){
+    public boolean search(String nameProduct){
         for(int i=0; i<listProduct.size(); i++){
             if(listProduct.get(i).getNameOfProduct()==nameProduct){
-                return listProduct.get(i);
+                System.out.println(listProduct.get(i));
+                return true;
             }
         }
-        return null;
+        System.out.println("ko co san pham nay: "+ nameProduct);
+        return false;
+
     }
     public void sapXep(){
         Collections.sort(listProduct,new SortCostProduct());
@@ -61,7 +64,7 @@ public class ProductManagerArrayList {
 //        System.out.println("-----");
 //        list.disPlay();
         System.out.println("---search---");
-        System.out.println(list.search("ten4"));
+        list.search("ten4");
         System.out.println("-----sap xep------");
         list.sapXep();
         list.disPlay();
