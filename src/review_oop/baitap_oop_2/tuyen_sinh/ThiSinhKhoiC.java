@@ -3,7 +3,7 @@ package review_oop.baitap_oop_2.tuyen_sinh;
 public class ThiSinhKhoiC extends ThiSinh {
     private String monThi="Van, Su, Dia";
 
-    public ThiSinhKhoiC(long soBaoDanh, String tenThiSinh, String diaChi, double uuTien) {
+    public ThiSinhKhoiC(String soBaoDanh, String tenThiSinh, String diaChi, String uuTien) {
         super(soBaoDanh, tenThiSinh, diaChi, uuTien);
     }
 
@@ -13,5 +13,12 @@ public class ThiSinhKhoiC extends ThiSinh {
 
     public void setMonThi(String monThi) {
         this.monThi = monThi;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+"---ThiSinhKhoiC{" +
+                "monThi='" + monThi + '\'' +
+                '}';
     }
 }
