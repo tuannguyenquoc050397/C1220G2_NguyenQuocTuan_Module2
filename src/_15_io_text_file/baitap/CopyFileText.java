@@ -53,7 +53,7 @@ public class CopyFileText {
         String targetPathFile = "src\\_15_io_text_file\\baitap\\file_target.csv";
         String sourcePathFile = "src/_15_io_text_file/baitap/file.csv";
         File file=new File(targetPathFile);
-        if(file.length()==0||file.length()==2){
+        if(file.length()==0){
             List<String> listLine = readFile(sourcePathFile);
             for (String line : listLine) {
                 writeFile(targetPathFile,line);

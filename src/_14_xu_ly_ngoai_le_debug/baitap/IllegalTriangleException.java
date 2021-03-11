@@ -4,4 +4,8 @@ public class IllegalTriangleException extends Exception {
     public IllegalTriangleException(String s) {
         super(s);
     }
+//    @Override
+//    public String getMessage(){
+//        return "tong 2 canh"
+//    }
 }
